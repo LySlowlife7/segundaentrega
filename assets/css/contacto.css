@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media screen and (min-width: 300px) {
+    body {
+      font-family: 'Oswald', sans-serif !important;
+    }
+    .logo {
+      width: auto;
+      display: flex;
+      padding: 5px;
+      justify-content: center;
+    }
+    .barra {
+      display: flex;
+      justify-content: center;
+      color: #FFF;
+      height: 80px;
+      list-style: none;
+    }
+    .barra ul {
+      display: inline-block;
+      padding-left: 0px;
+    }
+    .barra ul li {
+      display: inline-block;
+      padding: 10px;
+    }
+    .barra ul li a {
+      color: #521F63;
+    }
+    .barra a {
+      display: block;
+      text-decoration: none;
+      font-size: 15px;
+    }
+    .principal {
+      background-image: url(/img/carousel2.jpg);
+      height: 150px;
+      width: 100%;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .principal h1 {
+      text-align: center;
+      font-size: 5vw;
+      text-transform: uppercase;
+      color: #FFF;
+      text-shadow: 3px 0px 32px #d18de8;
+      animation-name: focus-in-contract;
+      animation-duration: 2.2s;
+      animation-timing-function: ease;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+    }
+    @keyframes focus-in-contract {
+      0% {
+        letter-spacing: 1em;
+        filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        filter: blur(0);
+        opacity: 1;
+      }
+    }
+    main {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+    }
+    .info h2 {
+      text-align: center;
+      color: #5A3D63;
+    }
+    .info p {
+      line-height: 1.2em;
+      letter-spacing: 2.5px;
+      padding: 10px;
+      text-align: justify;
+    }
+    .info img {
+      width: 100%;
+      padding-top: 10px;
+    }
+    .tar {
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: flex-start;
+      width: 100%;
+      overflow: auto;
+      flex-direction: row;
+    }
+    .caja {
+      width: auto;
+      padding: 20px;
+      height: auto;
+      margin: 20px;
+      box-shadow: 0px 0px 9px 2px #9337B2;
+    }
+    .caja i {
+      font-size: 70px;
+      position: absolute;
+      margin-top: 10px;
+    }
+    .caja h2 {
+      margin-left: 110px;
+      font-size: 24px;
+      color: #9337B2;
+    }
+    .caja p {
+      margin-left: 110px;
+      font-size: 14px;
+    }
+    .portafolio {
+      height: 100%;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 10px;
+    }
+    .port {
+      width: 100%;
+    }
+    .port h3 {
+      text-align: center;
+      color: #9337B2;
+    }
+    .port img {
+      width: 100%;
+    }
+    footer {
+      background-color: #521F63;
+      width: 100%;
+      height: 125px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    footer .redes {
+      color: #FFF;
+      list-style: none;
+    }
+    footer .redes ul {
+      display: inline-block;
+      padding-left: 0px;
+    }
+    footer .redes ul li {
+      display: inline-block;
+      padding: 0px;
+    }
+    footer .redes ul li a {
+      background-color: #414141;
+      color: #FFF;
+      line-height: 1;
+      width: 36px;
+      height: 36px;
+      font-size: 18px;
+      display: inline-block;
+      margin: 2px;
+      padding: 8px 0;
+      margin-right: 4px;
+      border-radius: 4px;
+      text-align: center;
+    }
+    footer .redes ul li a:hover {
+      background-color: #FFF;
+      color: #D18DE8;
+      transition: background 0.5s 0s linear;
+    }
+    footer p {
+      margin-top: 20px;
+      font-size: 4vw;
+      color: #FFF;
+    }
+    .formulario {
+      padding: 20px;
+      width: 70%;
+    }
+    .no-gutter {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .no-gutter > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .logo {
+      width: 20%;
+      padding: 5px;
+      margin: 5px 50px;
+    }
+    .barra {
+      color: #FFF;
+      height: 120px;
+      list-style: none;
+      justify-content: center;
+    }
+    .barra ul {
+      display: inline-block;
+    }
+    .barra ul li {
+      display: inline-block;
+      padding: 0px;
+    }
+    .barra ul li a {
+      display: block;
+      line-height: 148px;
+      padding: 0 14px;
+      text-decoration: none;
+      color: #000000;
+      font-size: 20px;
+    }
+    .barra ul li a:hover {
+      color: #ffffff;
+      background: #521F63;
+    }
+    .principal {
+      height: 400px;
+    }
+    .principal h1 {
+      text-align: center;
+      font-size: 4vw;
+      text-transform: uppercase;
+      color: #FFF;
+      text-shadow: 3px 0px 32px #d18de8;
+    }
+    .info {
+      background-color: white;
+      padding: 20px;
+      height: 500px;
+      background-size: cover;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .info img {
+      width: 90%;
+      padding: 5px;
+      margin: 0 20px;
+    }
+    .info h2 {
+      font-size: 2vw;
+      text-align: center;
+      color: #9337B2;
+    }
+    .info p {
+      font-size: 1vw;
+      line-height: 1.2em;
+      letter-spacing: 2.5px;
+      padding: 10px;
+      text-align: justify;
+    }
+    .caja {
+      width: 30%;
+      height: 150px;
+    }
+    .portafolio {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 10px;
+    }
+    .port {
+      width: 30%;
+    }
+    .port h3 {
+      font-size: 1vw;
+      color: #9337B2;
+      text-align: center;
+      padding: 10px;
+    }
+    .port img {
+      width: 100%;
+      padding: 5px;
+    }
+    footer {
+      background-color: #521F63;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+    }
+    footer p {
+      font-size: 1.5vw;
+      color: #FFF;
+    }
+    .no-gutter {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .no-gutter > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  /*# sourceMappingURL=style.css.map */
+  
